@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>School Navigation</title>
+    <script src="script.js" defer></script></head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img id="logo" src="images/img3.png" alt="error"></a>
+                <ul>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="floor1.html">Rooms</a></li>
+                    <li class="hideOnMobile"><a href="#" onclick="showSection('windows-section')">Windows</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+                </ul>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg id="Ekis" xmlns="http://www.w3.org/2000/svg" height="10px" viewBox="0 -960 960 960" width="10px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="floor1.html">Rooms</a></li>
+                    <li><a href="#" onclick="showSection('windows-section')">Windows</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+     <section class="hero">
+        <div class="hero-text">
+            <h1>
+                <span class="red">Design And Development</span><br>
+                <span class="gradient">Of A Campus Navigation</span><br>
+                <span class="red">System </span>
+            </h1>
+
+            <div class="features">
+                <h3>KEY FEATURES</h3>
+                <ul>
+                    <li>📍 Real-time Indoor Mapping</li>
+                    <li>🏫 Classroom & Faculty Search</li>
+                    <li>⚡ Personalized Route Planning</li>
+                </ul>
+            </div>
+        </div>
+        <div class="map">
+            <img class="map-illustration" src="images/img1.png" alt="Campus Map" onclick="showSection('hero')" style="cursor: pointer;">
+        </div>
+    </section>
+ 
+        </div>
+    </section>
+        <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }   
+    </script>
+</body>
+</html>
